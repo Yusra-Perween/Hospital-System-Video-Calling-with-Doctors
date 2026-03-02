@@ -63,33 +63,59 @@ Hospital-System-Video-Calling-with-Doctors
 
 ## ⚙️ How to Run This Project
 
-### 1️⃣ Clone the repository
-```bash
+🔹 1. Clone the Repository
 git clone https://github.com/Yusra-Perween/Hospital-System-Video-Calling-with-Doctors.git
 cd Hospital-System-Video-Calling-with-Doctors
-2️⃣ Install dependencies
-pip install -r requirements.txt
-3️⃣ Setup MySQL Database
+🔹 2. Start XAMPP Services
 
-Open phpMyAdmin and run:
+Open XAMPP Control Panel and start:
+
+Apache
+
+MySQL
+
+Keep XAMPP running in the background.
+
+🔹 3. Create the Database
+
+Open browser and go to:
+
+http://localhost/phpmyadmin
+
+Click New and create database:
+
+hospital_db
+
+Select the database → Click Import
+
+Import the file:
 
 database.sql
-4️⃣ Update config.py
+🔹 4. Configure Database Connection
 
-Set your MySQL username & password.
+Open config.py and ensure MySQL credentials match your XAMPP setup:
 
-5️⃣ Run the project
+MYSQL_HOST = "localhost"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = ""
+MYSQL_DB = "hospital_db"
+MYSQL_PORT = 3306
+🔹 5. Install Required Libraries
+
+Open terminal inside the project folder and run:
+
+pip install -r requirements.txt
+🔹 6. Run the Application
+
+Start the Flask server:
+
 python app.py
 
-Open in browser:
+You should see:
+
+Running on http://127.0.0.1:5000/
+🔹 7. Open in Browser
+
+Visit the application in your browser:
 
 http://127.0.0.1:5000
-🎯 Future Improvements
-
-Real Stripe payment integration
-
-Online doctor approval system
-
-Chat system
-
-Email notifications
