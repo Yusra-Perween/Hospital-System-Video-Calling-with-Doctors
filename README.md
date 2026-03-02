@@ -66,6 +66,7 @@ Hospital-System-Video-Calling-with-Doctors
 🔹 1. Clone the Repository
 git clone https://github.com/Yusra-Perween/Hospital-System-Video-Calling-with-Doctors.git
 cd Hospital-System-Video-Calling-with-Doctors
+
 🔹 2. Start XAMPP Services
 
 Open XAMPP Control Panel and start:
@@ -91,6 +92,7 @@ Select the database → Click Import
 Import the file:
 
 database.sql
+
 🔹 4. Configure Database Connection
 
 Open config.py and ensure MySQL credentials match your XAMPP setup:
@@ -100,11 +102,13 @@ MYSQL_USER = "root"
 MYSQL_PASSWORD = ""
 MYSQL_DB = "hospital_db"
 MYSQL_PORT = 3306
+
 🔹 5. Install Required Libraries
 
 Open terminal inside the project folder and run:
 
 pip install -r requirements.txt
+
 🔹 6. Run the Application
 
 Start the Flask server:
@@ -114,6 +118,7 @@ python app.py
 You should see:
 
 Running on http://127.0.0.1:5000/
+
 🔹 7. Open in Browser
 
 Visit the application in your browser:
