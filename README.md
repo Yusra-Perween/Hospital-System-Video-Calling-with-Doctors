@@ -1,54 +1,70 @@
-# 🏥 Hospital System – Video Calling with Doctors
+🏥 Hospital System – Video Calling with Doctors
 
-A complete **Flask + MySQL web application** where patients can book appointments, make payments and do video consultation with doctors.
+A complete Flask + MySQL telemedicine web application where patients can book appointments, make payments, start video consultations and chat in real-time with doctors.
 
----
+👩‍💻 Developed By
 
-## 👩‍💻 Developed By
-**Yusra Perween**
+Yusra Perween
 
----
+🚀 Features
+👤 Authentication
 
-## 🚀 Features
+Patient & Doctor Registration
 
-### 👤 Authentication
-- Patient & Doctor Registration
-- Login / Logout system
-- Role based dashboard
+Secure Login / Logout
 
-### 📅 Appointment System
-- Patients can book appointments
-- Doctors can view appointments
-- Cancel & Complete appointment feature
+Role-based Dashboard
 
-### 💳 Payment Gateway (Demo)
-- Fake payment page (Stripe removed)
-- Payment recorded in database
+📅 Appointment System
 
-### 🎥 Video Consultation
-- Start video call after booking
-- Camera + microphone access
-- Real-time consultation UI
+Patients can book appointments
 
-### 🗄️ Database
-- MySQL database integration
-- Stores users, doctors, appointments & payments
+Doctors can view appointments
 
----
+Cancel & Complete appointment feature
 
-## 🛠️ Tech Stack
+💳 Payment Gateway (Demo)
 
-| Technology | Used |
-|------------|------|
-| Python | Flask |
-| Database | MySQL |
-| Frontend | HTML, CSS, JS |
-| Backend | Flask |
-| Video | WebRTC |
+Fake payment page (Stripe removed)
 
----
+Payment recorded in MySQL database
 
-## 📂 Project Structure
+🎥 Video Consultation
+
+Start video call after booking
+
+Camera & microphone access
+
+WebRTC based video consultation UI
+
+💬 Live Chat During Video Call (NEW ⭐)
+
+Real-time chat between patient and doctor
+
+Built using Flask-SocketIO (WebSockets)
+
+Messages appear instantly without refreshing page
+
+🗄️ Database
+
+MySQL database stores:
+
+Users
+
+Doctors
+
+Appointments
+
+Payments
+
+🛠️ Tech Stack
+Technology	Used
+Python	Flask
+Database	MySQL
+Frontend	HTML, CSS, JavaScript
+Real-time Chat	Flask-SocketIO
+Video	WebRTC
+📂 Project Structure
 Hospital-System-Video-Calling-with-Doctors
 │
 ├── static/
@@ -58,10 +74,7 @@ Hospital-System-Video-Calling-with-Doctors
 ├── database.sql
 ├── requirements.txt
 └── README.md
-
----
-
-## ⚙️ How to Run This Project
+⚙️ How to Run This Project
 
 🔹 1. Clone the Repository
 git clone https://github.com/Yusra-Perween/Hospital-System-Video-Calling-with-Doctors.git
@@ -75,27 +88,23 @@ Apache
 
 MySQL
 
-Keep XAMPP running in the background.
-
 🔹 3. Create the Database
 
-Open browser and go to:
+Open in browser:
 
 http://localhost/phpmyadmin
 
-Click New and create database:
+Create database:
 
 hospital_db
 
-Select the database → Click Import
-
-Import the file:
+Import file:
 
 database.sql
 
 🔹 4. Configure Database Connection
 
-Open config.py and ensure MySQL credentials match your XAMPP setup:
+Open config.py:
 
 MYSQL_HOST = "localhost"
 MYSQL_USER = "root"
@@ -104,23 +113,23 @@ MYSQL_DB = "hospital_db"
 MYSQL_PORT = 3306
 
 🔹 5. Install Required Libraries
-
-Open terminal inside the project folder and run:
-
 pip install -r requirements.txt
 
 🔹 6. Run the Application
-
-Start the Flask server:
-
 python app.py
 
-You should see:
+You will see:
 
 Running on http://127.0.0.1:5000/
 
 🔹 7. Open in Browser
-
-Visit the application in your browser:
-
 http://127.0.0.1:5000
+🎯 Future Improvements
+
+AI Symptom Checker 🤖
+
+Doctor recommendation system
+
+Email notifications
+
+Real payment gateway integration
