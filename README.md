@@ -1,110 +1,112 @@
-🏥 Hospital System – Video Calling with Doctors
+# 🏥 Hospital System – Video Calling with Doctors
 
-A complete Flask + MySQL telemedicine web application where patients can book appointments, make payments, start video consultations and chat in real-time with doctors.
+A complete Flask + MySQL telemedicine web application where patients can book appointments, make payments, video consultations and chat in real-time with doctors.
 
-👩‍💻 Developed By
+## 👩‍💻 Developed By
+**Yusra Perween**
 
-Yusra Perween
+## 🚀 Features
 
-🚀 Features
-👤 Authentication
+### 👤 Authentication
+- Patient & Doctor Registration  
+- Secure Login / Logout  
+- Role-based Dashboard  
 
-Patient & Doctor Registration
+### 📅 Appointment System
+- Patients can book appointments  
+- Doctors can view appointments  
+- Cancel & Complete appointment feature  
 
-Secure Login / Logout
+### 💳 Payment Gateway (Demo)
+- Fake payment page (Stripe removed)  
+- Payment recorded in database  
+- Appointment confirmed after payment  
 
-Role-based Dashboard
+### 🎥 Video Consultation
+- Start video call after booking  
+- Camera + microphone access  
+- WebRTC consultation  
 
-📅 Appointment System
+### 💬 Live Chat During Video Call ⭐
+- Real-time chat using Flask-SocketIO  
+- Instant messaging between doctor & patient during video call  
 
-Patients can book appointments
+---
 
-Doctors can view appointments
-
-Cancel & Complete appointment feature
-
-💳 Payment Gateway (Demo)
-
-Fake payment page (Stripe removed)
-
-Payment recorded in MySQL database
-
-🎥 Video Consultation
-
-Start video call after booking
-
-Camera & microphone access
-
-WebRTC based video consultation UI
-
-💬 Live Chat During Video Call (NEW ⭐)
-
-Real-time chat between patient and doctor
-
-Built using Flask-SocketIO (WebSockets)
-
-Messages appear instantly without refreshing page
-
-🗄️ Database
-
+## 🗄️ Database
 MySQL database stores:
 
-Users
+- Users  
+- Doctors  
+- Appointments  
+- Payments  
 
-Doctors
+---
 
-Appointments
+## 🛠️ Tech Stack
 
-Payments
+| Technology | Used |
+|------------|------|
+| Backend | Python Flask |
+| Database | MySQL (XAMPP) |
+| Frontend | HTML, CSS, JavaScript |
+| Video Calling | WebRTC |
+| Real-time Chat | Flask-SocketIO |
 
-🛠️ Tech Stack
-Technology	Used
-Python	Flask
-Database	MySQL
-Frontend	HTML, CSS, JavaScript
-Real-time Chat	Flask-SocketIO
-Video	WebRTC
-📂 Project Structure
-Hospital-System-Video-Calling-with-Doctors
-│
-├── static/
-├── templates/
-├── app.py
-├── config.py
-├── database.sql
-├── requirements.txt
-└── README.md
-⚙️ How to Run This Project
+---
 
-🔹 1. Clone the Repository
+## 📂 Project Structure
+
+Hospital-System-Video-Calling-with-Doctors  
+│  
+├── static/  
+├── templates/  
+├── app.py  
+├── config.py  
+├── database.sql  
+├── requirements.txt  
+└── README.md  
+
+---
+
+## ⚙️ How to Run This Project
+
+### 🔹 Step 1 — Clone Repository
+
 git clone https://github.com/Yusra-Perween/Hospital-System-Video-Calling-with-Doctors.git
+
 cd Hospital-System-Video-Calling-with-Doctors
 
-🔹 2. Start XAMPP Services
 
+### 🔹 Step 2 — Start XAMPP
 Open XAMPP Control Panel and start:
 
-Apache
+- Apache  
+- MySQL  
 
-MySQL
+Keep XAMPP running in the background.
 
-🔹 3. Create the Database
+---
 
-Open in browser:
+### 🔹 Step 3 — Create the Database
+
+Open browser and go to:
+
 
 http://localhost/phpmyadmin
 
-Create database:
 
-hospital_db
+1. Click **New**  
+2. Create database → **hospital_db**  
+3. Open database → Click **Import**  
+4. Import file → **database.sql**
 
-Import file:
+---
 
-database.sql
+### 🔹 Step 4 — Configure Database Connection
 
-🔹 4. Configure Database Connection
+Open **config.py** and ensure:
 
-Open config.py:
 
 MYSQL_HOST = "localhost"
 MYSQL_USER = "root"
@@ -112,24 +114,34 @@ MYSQL_PASSWORD = ""
 MYSQL_DB = "hospital_db"
 MYSQL_PORT = 3306
 
-🔹 5. Install Required Libraries
+
+---
+
+### 🔹 Step 5 — Install Required Libraries
+
+Open terminal inside project folder and run:
+
+
 pip install -r requirements.txt
 
-🔹 6. Run the Application
+
+---
+
+### 🔹 Step 6 — Run the Application
+
+
 python app.py
 
-You will see:
+
+You should see:
+
 
 Running on http://127.0.0.1:5000/
 
-🔹 7. Open in Browser
+
+---
+
+### 🔹 Step 7 — Open in Browser
+
+
 http://127.0.0.1:5000
-🎯 Future Improvements
-
-AI Symptom Checker 🤖
-
-Doctor recommendation system
-
-Email notifications
-
-Real payment gateway integration
