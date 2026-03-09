@@ -143,3 +143,7 @@ Running on http://127.0.0.1:5000/
 
 ### 🔹 Step 7 — Open in Browser
 
+
+http://127.0.0.1:5000
+
+
